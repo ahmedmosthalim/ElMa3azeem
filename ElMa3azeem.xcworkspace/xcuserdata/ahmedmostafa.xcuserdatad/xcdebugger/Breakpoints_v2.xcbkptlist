@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8EF880D5-3133-4D58-BC69-C397001A1C2E"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6365B95-1116-42FB-9C89-5D2E7B31412C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElMa3azeem/Application/PROVIDER/ProviderMoreSB/ViewController/StoreSetting/StoreWorkTimeCell/StoreWorkTimeCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "addTimeAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6691603-7898-4414-9D78-445AF465966E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElMa3azeem/Extentions/StringExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "stringToDate"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C4B702C2-9201-4095-AB59-33956D97D196"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElMa3azeem/Extentions/StringExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "timeStringToDate"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43CCDF05-56B3-4975-99D7-4B938DF5D01C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElMa3azeem/Extentions/DateExtentions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "arabicTimeToString()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4BA8019-CF8A-4EF1-9AFB-6491008384ED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElMa3azeem/Application/DELEGATE/DelegateHomeSB/DelegateProfile/DelegateProfileVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "502"
+            endingLineNumber = "502"
+            landmarkName = "updateDelegateProfile(name:countryCode:phoneNumber:image:address:lat:long:cityID:regionID:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B4BA8019-CF8A-4EF1-9AFB-6491008384ED - a9cdb9926c6d47ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ElMa3azeem.DelegateProfileVC.updateDelegateProfile(name: Swift.String, countryCode: Swift.String, phoneNumber: Swift.String, image: Swift.Optional&lt;Foundation.Data&gt;, address: Swift.String, lat: Swift.String, long: Swift.String, cityID: Swift.Int, regionID: Swift.Int) -&gt; ()"
+                  moduleName = "ElMa3azeem"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedmostafa/Documents/Awamer%20Projects/ElMa3azeem/ElMa3azeem/Application/DELEGATE/DelegateHomeSB/DelegateProfile/DelegateProfileVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "502"
+                  endingLineNumber = "502"
+                  offsetFromSymbolStart = "1080">
+               </Location>
+               <Location
+                  uuid = "B4BA8019-CF8A-4EF1-9AFB-6491008384ED - e2d5db6dbe4068e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;ElMa3azeem.GeneralModel&lt;ElMa3azeem.UserModel&gt;, Swift.Error&gt;) -&gt; () in ElMa3azeem.DelegateProfileVC.updateDelegateProfile(name: Swift.String, countryCode: Swift.String, phoneNumber: Swift.String, image: Swift.Optional&lt;Foundation.Data&gt;, address: Swift.String, lat: Swift.String, long: Swift.String, cityID: Swift.Int, regionID: Swift.Int) -&gt; ()"
+                  moduleName = "ElMa3azeem"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedmostafa/Documents/Awamer%20Projects/ElMa3azeem/ElMa3azeem/Application/DELEGATE/DelegateHomeSB/DelegateProfile/DelegateProfileVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "502"
+                  endingLineNumber = "502"
+                  offsetFromSymbolStart = "280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D5C2F5F8-9A1E-4D42-870D-F409C4835A9C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElMa3azeem/Application/Common views/Common/AuthSB/Componentes/ViewControllers/ConfirmCodeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "activeSuccess(withAnimation:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

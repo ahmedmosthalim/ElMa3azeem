@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserContactView" customModule="ElMa3azeem" customModuleProvider="target">
+            <connections>
+                <outlet property="chatBtn" destination="Qem-Fx-nKc" id="tPY-UZ-QLP"/>
+                <outlet property="delegateImage" destination="Ewg-DY-brb" id="Q9s-bK-0eZ"/>
+                <outlet property="delegateNameLbl" destination="wW8-NK-lEQ" id="w8g-7a-83R"/>
+                <outlet property="phoneCallBtn" destination="Wt6-V6-SyV" id="OLX-tW-UV7"/>
+                <outlet property="showChatBtn" destination="ig9-CN-gub" id="bUP-rc-fDM"/>
+                <outlet property="viewTitleLbl" destination="Y3y-8b-Dzc" id="9IW-Ub-1p0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSk-NZ-4kV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QuQ-kl-HTs">
+                            <rect key="frame" x="8" y="8" width="359" height="123"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery data :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3y-8b-Dzc">
+                                    <rect key="frame" x="0.0" y="0.0" width="359" height="17"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" name="MainFontColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTe-V7-LaF">
+                                    <rect key="frame" x="0.0" y="25" width="359" height="1"/>
+                                    <color key="backgroundColor" name="SecondViewBackGround"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="MNY-hI-Z9f"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1CH-li-V5j">
+                                    <rect key="frame" x="0.0" y="34" width="359" height="89"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ewg-DY-brb">
+                                            <rect key="frame" x="0.0" y="10" width="70" height="69"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="O1p-oI-W1E"/>
+                                                <constraint firstAttribute="width" secondItem="Ewg-DY-brb" secondAttribute="height" multiplier="1:1" constant="1" id="r9G-6w-T0N"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="35"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xyl-eb-AFg">
+                                            <rect key="frame" x="78" y="14" width="281" height="61"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wW8-NK-lEQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="281" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                    <color key="textColor" name="MainFontColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9fI-lU-3Km">
+                                                    <rect key="frame" x="0.0" y="25" width="281" height="36"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wt6-V6-SyV" customClass="SpaceingImageButton" customModule="ElMa3azeem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="87" height="36"/>
+                                                            <color key="backgroundColor" name="MainColor"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="phone call" image="call"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="phone call"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="phoneAction:" destination="-1" eventType="touchUpInside" id="9td-h3-OlF"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qem-Fx-nKc" customClass="SpaceingImageButton" customModule="ElMa3azeem" customModuleProvider="target">
+                                                            <rect key="frame" x="97" y="0.0" width="87" height="36"/>
+                                                            <color key="backgroundColor" name="MainColor"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="open chat" image="chat"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="open chat"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="chatAction:" destination="-1" eventType="touchUpInside" id="Ngi-Iz-yFb"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ig9-CN-gub" customClass="SpaceingImageButton" customModule="ElMa3azeem" customModuleProvider="target">
+                                                            <rect key="frame" x="194" y="0.0" width="87" height="36"/>
+                                                            <color key="backgroundColor" name="MainColor"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="show chat" image="chat"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="show chat"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="chatAction:" destination="-1" eventType="touchUpInside" id="Dkr-Ec-Md5"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="36" id="DVu-OQ-FlG"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="viewBackGround"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="QuQ-kl-HTs" secondAttribute="bottom" constant="8" id="BzL-eZ-PGv"/>
+                        <constraint firstAttribute="trailing" secondItem="QuQ-kl-HTs" secondAttribute="trailing" constant="8" id="XJQ-FR-ra2"/>
+                        <constraint firstItem="QuQ-kl-HTs" firstAttribute="leading" secondItem="CSk-NZ-4kV" secondAttribute="leading" constant="8" id="aOt-2J-Ezb"/>
+                        <constraint firstItem="QuQ-kl-HTs" firstAttribute="top" secondItem="CSk-NZ-4kV" secondAttribute="top" constant="8" id="nbx-uN-9Tf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.29999999999999999"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="2" height="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="CSk-NZ-4kV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1I0-N5-6e7"/>
+                <constraint firstItem="CSk-NZ-4kV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8qJ-zY-eYh"/>
+                <constraint firstItem="CSk-NZ-4kV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="9W9-xg-GQ9"/>
+                <constraint firstItem="CSk-NZ-4kV" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="kVA-Fw-SSL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-79.200000000000003" y="-247.37631184407797"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Qem-Fx-nKc">
+            <size key="intrinsicContentSize" width="69" height="16.5"/>
+        </designable>
+        <designable name="Wt6-V6-SyV">
+            <size key="intrinsicContentSize" width="66.5" height="15.5"/>
+        </designable>
+        <designable name="ig9-CN-gub">
+            <size key="intrinsicContentSize" width="70" height="16.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="call" width="15.5" height="15.5"/>
+        <image name="chat" width="19" height="16.5"/>
+        <namedColor name="MainColor">
+            <color red="0.83499997854232788" green="0.71799999475479126" blue="0.4309999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainFontColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="SecondViewBackGround">
+            <color red="0.15700000524520874" green="0.15700000524520874" blue="0.15700000524520874" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="viewBackGround">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

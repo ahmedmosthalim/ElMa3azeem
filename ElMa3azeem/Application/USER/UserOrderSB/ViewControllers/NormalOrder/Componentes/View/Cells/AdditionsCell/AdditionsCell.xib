@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="41" id="KGk-i7-Jjw" customClass="AdditionsCell" customModule="HOME_COOKING" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squar_check_mark_not_selected" translatesAutoresizingMaskIntoConstraints="NO" id="AW4-6u-gat">
+                        <rect key="frame" x="20" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="AW4-6u-gat" secondAttribute="height" multiplier="1:1" id="Fi6-Bp-A63"/>
+                            <constraint firstAttribute="height" constant="20" id="WJq-33-eyx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmu-3j-gjd">
+                        <rect key="frame" x="50" y="13" width="31.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" name="MainFontColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JB-mP-CxL">
+                        <rect key="frame" x="268.5" y="13" width="31.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" red="0.55294117647058827" green="0.55294117647058827" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="BackGroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2JB-mP-CxL" secondAttribute="trailing" constant="20" id="OD8-IL-8uP"/>
+                    <constraint firstAttribute="bottom" secondItem="AW4-6u-gat" secondAttribute="bottom" constant="10" id="Q7d-Ce-PqY"/>
+                    <constraint firstItem="AW4-6u-gat" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VbN-Xw-YAL"/>
+                    <constraint firstItem="Pmu-3j-gjd" firstAttribute="leading" secondItem="AW4-6u-gat" secondAttribute="trailing" constant="10" id="Wda-Xi-hEc"/>
+                    <constraint firstItem="2JB-mP-CxL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pmu-3j-gjd" secondAttribute="trailing" constant="8" id="Ze3-wV-jgz"/>
+                    <constraint firstItem="AW4-6u-gat" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="grw-Nz-pAC"/>
+                    <constraint firstItem="2JB-mP-CxL" firstAttribute="centerY" secondItem="Pmu-3j-gjd" secondAttribute="centerY" id="s2I-dZ-tYm"/>
+                    <constraint firstItem="AW4-6u-gat" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="uvF-CN-39V"/>
+                    <constraint firstItem="Pmu-3j-gjd" firstAttribute="centerY" secondItem="AW4-6u-gat" secondAttribute="centerY" id="zOk-oL-5EN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="BackGroundColor"/>
+            <connections>
+                <outlet property="checkBox" destination="AW4-6u-gat" id="Rr0-MU-5oX"/>
+                <outlet property="priceLbl" destination="2JB-mP-CxL" id="Rrc-Sz-n5z"/>
+                <outlet property="titleLbl" destination="Pmu-3j-gjd" id="1gk-v0-0Wa"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="115.17857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="squar_check_mark_not_selected" width="17" height="17"/>
+        <namedColor name="BackGroundColor">
+            <color red="0.125" green="0.125" blue="0.125" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="MainFontColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

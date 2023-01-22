@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageSliderCell" customModule="HOME_COOKING" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="236"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="236"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testSlider" translatesAutoresizingMaskIntoConstraints="NO" id="cjx-8N-v7O">
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="236"/>
+                    </imageView>
+                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRz-1Z-gQt">
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="236"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pqF-BP-D49">
+                                <rect key="frame" x="20" y="160" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="hVK-8N-LD8"/>
+                                    <constraint firstAttribute="width" secondItem="pqF-BP-D49" secondAttribute="height" multiplier="1:1" id="j3z-3b-IGf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PKb-px-oGf">
+                                <rect key="frame" x="96" y="163.5" width="301" height="48.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="ماكدونالز" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ego-cp-p0g">
+                                        <rect key="frame" x="0.0" y="0.0" width="301" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <color key="textColor" red="1" green="0.71764705880000002" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="هذا النص هو مثال لنص يمكن ان يستبدل بنص اخر في نفس المساحه" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx6-tT-56r">
+                                        <rect key="frame" x="0.0" y="19.5" width="301" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="PKb-px-oGf" firstAttribute="leading" secondItem="pqF-BP-D49" secondAttribute="trailing" constant="16" id="05c-WW-v9E"/>
+                            <constraint firstAttribute="bottom" secondItem="PKb-px-oGf" secondAttribute="bottom" constant="24" id="2iz-my-0ML"/>
+                            <constraint firstItem="pqF-BP-D49" firstAttribute="leading" secondItem="MRz-1Z-gQt" secondAttribute="leading" constant="20" id="5ef-Sb-b6E"/>
+                            <constraint firstAttribute="trailing" secondItem="PKb-px-oGf" secondAttribute="trailing" constant="16" id="UQJ-CW-Y8R"/>
+                            <constraint firstAttribute="bottom" secondItem="pqF-BP-D49" secondAttribute="bottom" constant="16" id="V5a-fW-gyO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MRz-1Z-gQt" secondAttribute="trailing" id="6cB-7m-ggM"/>
+                <constraint firstAttribute="bottom" secondItem="cjx-8N-v7O" secondAttribute="bottom" id="TKE-lB-bWK"/>
+                <constraint firstItem="MRz-1Z-gQt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UOU-8Y-ITb"/>
+                <constraint firstAttribute="bottom" secondItem="MRz-1Z-gQt" secondAttribute="bottom" id="XXX-v9-8fA"/>
+                <constraint firstAttribute="trailing" secondItem="cjx-8N-v7O" secondAttribute="trailing" id="Xjj-jk-UKW"/>
+                <constraint firstItem="cjx-8N-v7O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dWb-mW-Gud"/>
+                <constraint firstItem="cjx-8N-v7O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vf7-HU-qej"/>
+                <constraint firstItem="MRz-1Z-gQt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vwM-1s-pME"/>
+            </constraints>
+            <size key="customSize" width="413" height="236"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cellDescription" destination="fx6-tT-56r" id="uhU-9x-hAo"/>
+                <outlet property="cellIcon" destination="pqF-BP-D49" id="dsl-8f-ERz"/>
+                <outlet property="cellImage" destination="cjx-8N-v7O" id="E2z-5Y-YP8"/>
+                <outlet property="cellTitle" destination="ego-cp-p0g" id="7zG-uh-zci"/>
+            </connections>
+            <point key="canvasLocation" x="400.72463768115944" y="184.82142857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="testLogo" width="55" height="55"/>
+        <image name="testSlider" width="115" height="50"/>
+    </resources>
+</document>

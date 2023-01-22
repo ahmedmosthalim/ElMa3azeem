@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CancelReasonView" customModule="HOME_COOKING" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelReasonView" destination="iQB-nI-XIG" id="IPD-Z8-jIp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="167"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ax9-YD-Uv3">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="167"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2I-a8-Gig">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="167"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancel reason :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNj-hB-Kk7">
+                                    <rect key="frame" x="8" y="16" width="374" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="NPr-4m-GTO"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" name="StoreStateClose"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Cancel reason :"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAk-tI-4bf">
+                                    <rect key="frame" x="0.0" y="44" width="390" height="1"/>
+                                    <color key="backgroundColor" name="BackGroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="UR4-gK-tLe"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQB-nI-XIG">
+                                    <rect key="frame" x="16" y="61" width="358" height="90"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Xrt-iy-1G5"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" name="MainFontColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="viewBackGround"/>
+                            <constraints>
+                                <constraint firstItem="nAk-tI-4bf" firstAttribute="leading" secondItem="Y2I-a8-Gig" secondAttribute="leading" id="0Mo-2b-af8"/>
+                                <constraint firstAttribute="trailing" secondItem="iQB-nI-XIG" secondAttribute="trailing" constant="16" id="1ku-Qs-uv3"/>
+                                <constraint firstItem="BNj-hB-Kk7" firstAttribute="leading" secondItem="Y2I-a8-Gig" secondAttribute="leading" constant="8" id="7Vc-t6-tei"/>
+                                <constraint firstItem="iQB-nI-XIG" firstAttribute="top" secondItem="nAk-tI-4bf" secondAttribute="bottom" constant="16" id="9bh-h3-1Zy"/>
+                                <constraint firstItem="nAk-tI-4bf" firstAttribute="top" secondItem="BNj-hB-Kk7" secondAttribute="bottom" constant="8" id="Mca-CN-q2I"/>
+                                <constraint firstAttribute="trailing" secondItem="BNj-hB-Kk7" secondAttribute="trailing" constant="8" id="VRl-G3-Rz2"/>
+                                <constraint firstItem="BNj-hB-Kk7" firstAttribute="top" secondItem="Y2I-a8-Gig" secondAttribute="top" constant="16" id="akQ-n9-B6a"/>
+                                <constraint firstAttribute="trailing" secondItem="nAk-tI-4bf" secondAttribute="trailing" id="c7G-qK-mcX"/>
+                                <constraint firstItem="iQB-nI-XIG" firstAttribute="leading" secondItem="Y2I-a8-Gig" secondAttribute="leading" constant="16" id="mx8-UF-VPF"/>
+                                <constraint firstAttribute="bottom" secondItem="iQB-nI-XIG" secondAttribute="bottom" constant="16" id="tAd-Gl-wSl"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="0.29999999999999999"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="2" height="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" white="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="BackGroundColor"/>
+            <constraints>
+                <constraint firstItem="Ax9-YD-Uv3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="iDp-xD-4hP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ax9-YD-Uv3" secondAttribute="trailing" id="w0E-EC-TU3"/>
+                <constraint firstItem="Ax9-YD-Uv3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="yvp-jW-Ql0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ax9-YD-Uv3" secondAttribute="bottom" id="ziQ-rm-9TT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="46.399999999999999" y="-192.95352323838082"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BackGroundColor">
+            <color red="0.125" green="0.125" blue="0.125" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="MainFontColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="StoreStateClose">
+            <color red="0.92500001192092896" green="0.18400000035762787" blue="0.18400000035762787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="viewBackGround">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

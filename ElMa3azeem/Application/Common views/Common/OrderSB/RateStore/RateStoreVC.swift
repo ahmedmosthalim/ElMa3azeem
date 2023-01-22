@@ -1,0 +1,99 @@
+//
+//  RateOrderVC.swift
+//  ElMa3azeem
+//
+//  Created by Abdullah Tarek & Ahmed Mostafa Halim on 05/01/2022.
+//
+
+import BottomPopup
+import Cosmos
+import NVActivityIndicatorView
+import UIKit
+
+class RateStoreVC: BottomPopupViewController {
+    var height: CGFloat?
+    var topCornerRadius: CGFloat?
+    var presentDuration: Double?
+    var dismissDuration: Double?
+    var shouldDismissInteractivelty: Bool?
+
+    override var popupHeight: CGFloat { return height ?? CGFloat(self.view.frame.height) }
+    override var popupTopCornerRadius: CGFloat { return topCornerRadius ?? CGFloat(10) }
+    override var popupPresentDuration: Double { return presentDuration ?? 0.4 }
+    override var popupDismissDuration: Double { return dismissDuration ?? 0.4 }
+    override var popupShouldDismissInteractivelty: Bool { return shouldDismissInteractivelty ?? true }
+
+    @IBOutlet weak var backGroungView: UIView!
+    @IBOutlet weak var storeImage: UIImageView!
+    @IBOutlet weak var storeName: UILabel!
+    @IBOutlet weak var storeRate: CosmosView!
+    @IBOutlet weak var messageTv: AppTextViewStyle!
+    @IBOutlet weak var storeNameLbl: UILabel!
+
+    var storename = String()
+    var storeID = Int()
+    var rate = Double()
+    var orderID = Int()
+    var storeIconUrl = String()
+
+    var rateStoreSucess: (() -> Void)?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
+    }
+
+    func setupView() {
+        storeImage.setImage(image: storeIconUrl, loading: true)
+        storeName.text = "\("How was the experience with".localized)\(" ")\(storename) ?"
+        
+        messageTv.placeHolder = "If there are comments, add here".localized
+
+        backGroungView.layer.cornerRadius = 32
+        backGroungView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        backGroungView.clipsToBounds = true
+    }
+
+    @IBAction func confirmCancelAction(_ sender: Any) {
+        do {
+            let rate = try ValidationService.validate(rate: storeRate.rating)
+            rateStore(orderID: "\(orderID)", rate: "\(rate)", storeID: "\(storeID)", comment: messageTv?.text ?? "")
+        } catch {
+            showError(error: error.localizedDescription)
+        }
+    }
+
+    @IBAction func CancelAction(_ sender: Any) {
+        dismiss(animated: true)
+    }
+}
+
+// MARK: - API
+
+extension RateStoreVC {
+    func rateStore(orderID: String, rate: String, storeID: String, comment: String) {
+        showLoader()
+        CreateOrderNetworkRouter.rateStore(orderID: orderID, rate: rate, storeID: storeID, comment: comment).send(GeneralModel<UserModel>.self) { [weak self] result in
+            guard let self = self else { return }
+            self.hideLoader()
+            switch result {
+            case let .failure(error):
+                if error.localizedDescription == APIConnectionErrors.connection.localizedDescription {
+                    self.showNoInternetConnection { [weak self] in
+                        self?.rateStore(orderID: orderID, rate: rate, storeID: storeID, comment: comment)
+                    }
+                } else {
+                    self.showError(error: error.localizedDescription)
+                }
+            case let .success(data):
+                if data.key == ResponceStatus.success.rawValue {
+                    self.showSuccess(title: "", massage: data.msg)
+                    self.dismiss(animated: true)
+                    self.rateStoreSucess?()
+                } else {
+                    self.showError(error: data.msg)
+                }
+            }
+        }
+    }
+}

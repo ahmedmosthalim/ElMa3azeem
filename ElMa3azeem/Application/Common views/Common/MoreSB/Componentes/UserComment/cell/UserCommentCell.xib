@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="79" id="KGk-i7-Jjw" customClass="UserCommentCell" customModule="HOME_COOKING" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="D85-Qk-aur">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <color key="backgroundColor" name="SecondViewBackGround"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="D85-Qk-aur" secondAttribute="height" multiplier="1:1" id="BxI-vA-B1h"/>
+                            <constraint firstAttribute="height" constant="60" id="VW5-vz-SwM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYq-zc-0hd">
+                        <rect key="frame" x="78" y="31" width="226" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="dNy-I6-P87"/>
+                        </constraints>
+                        <string key="text">This text is an example of a text that can be replaced by another textThis text is an example of a text that can be replaced by another text</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" name="SecondFontColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="منذ 1 ساعة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5W-vs-RCq">
+                        <rect key="frame" x="265" y="10.5" width="45" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="dea-EJ-JcM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" name="SecondFontColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dPN-x8-z4w">
+                        <rect key="frame" x="78" y="10" width="132.5" height="17"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ماكدونالز" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnZ-yS-mNs">
+                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" name="MainFontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="5dq-xZ-MQu" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="62.5" y="0.0" width="70" height="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="EsJ-Sj-IbO"/>
+                                    <constraint firstAttribute="width" constant="70" id="fPy-f9-I3u"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemYellowColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemGray3Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                        <color key="value" systemColor="systemGray5Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" name="viewBackGround"/>
+                <constraints>
+                    <constraint firstItem="q5W-vs-RCq" firstAttribute="centerY" secondItem="dPN-x8-z4w" secondAttribute="centerY" id="0mb-sL-ZJj"/>
+                    <constraint firstAttribute="trailing" secondItem="MYq-zc-0hd" secondAttribute="trailing" constant="16" id="28A-A8-IHU"/>
+                    <constraint firstAttribute="trailing" secondItem="q5W-vs-RCq" secondAttribute="trailing" constant="10" id="9hu-0g-Sgs"/>
+                    <constraint firstItem="D85-Qk-aur" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EdF-HN-QMg"/>
+                    <constraint firstItem="dPN-x8-z4w" firstAttribute="leading" secondItem="D85-Qk-aur" secondAttribute="trailing" constant="8" id="T3g-QC-fPB"/>
+                    <constraint firstAttribute="bottom" secondItem="MYq-zc-0hd" secondAttribute="bottom" constant="10" id="UZS-1c-WC7"/>
+                    <constraint firstItem="MYq-zc-0hd" firstAttribute="top" secondItem="dPN-x8-z4w" secondAttribute="bottom" constant="4" id="XWR-Ys-psV"/>
+                    <constraint firstItem="q5W-vs-RCq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dPN-x8-z4w" secondAttribute="trailing" constant="8" id="cb9-2I-Nph"/>
+                    <constraint firstItem="dPN-x8-z4w" firstAttribute="top" secondItem="D85-Qk-aur" secondAttribute="top" id="eiX-KC-5Cj"/>
+                    <constraint firstItem="D85-Qk-aur" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="oPw-K2-fSJ"/>
+                    <constraint firstItem="MYq-zc-0hd" firstAttribute="leading" secondItem="D85-Qk-aur" secondAttribute="trailing" constant="8" id="yys-WS-l0W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="BackGroundColor"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cellDescription" destination="MYq-zc-0hd" id="CZb-Bk-oKt"/>
+                <outlet property="cellImage" destination="D85-Qk-aur" id="71M-mE-Z9r"/>
+                <outlet property="cellRate" destination="5dq-xZ-MQu" id="qQY-pp-613"/>
+                <outlet property="cellTime" destination="q5W-vs-RCq" id="vk0-la-Rbf"/>
+                <outlet property="cellTitle" destination="xnZ-yS-mNs" id="Kfr-8j-QWr"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="113.50446428571428"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="5dq-xZ-MQu">
+            <size key="intrinsicContentSize" width="74" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="logo" width="142.5" height="155.5"/>
+        <namedColor name="BackGroundColor">
+            <color red="0.125" green="0.125" blue="0.125" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="MainFontColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="SecondFontColor">
+            <color red="0.7369999885559082" green="0.7369999885559082" blue="0.7369999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondViewBackGround">
+            <color red="0.15700000524520874" green="0.15700000524520874" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="viewBackGround">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

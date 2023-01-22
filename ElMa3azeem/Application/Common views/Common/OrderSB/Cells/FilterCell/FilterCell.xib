@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="KGk-i7-Jjw" customClass="FilterCell" customModule="HOME_COOKING" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvf-gy-hUc">
+                        <rect key="frame" x="48" y="32.5" width="264" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" name="MainFontColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-mark-selected" translatesAutoresizingMaskIntoConstraints="NO" id="a5u-D9-MEX">
+                        <rect key="frame" x="16" y="20.5" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="a5u-D9-MEX" secondAttribute="height" multiplier="1:1" id="DoO-hK-ec3"/>
+                            <constraint firstAttribute="height" constant="24" id="wsa-qQ-c5b"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" name="viewBackGround"/>
+                <constraints>
+                    <constraint firstItem="a5u-D9-MEX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="6Kh-mw-acn"/>
+                    <constraint firstItem="Xvf-gy-hUc" firstAttribute="centerY" secondItem="a5u-D9-MEX" secondAttribute="centerY" id="9bC-kb-xG0"/>
+                    <constraint firstItem="a5u-D9-MEX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cRl-yF-Cr4"/>
+                    <constraint firstItem="Xvf-gy-hUc" firstAttribute="leading" secondItem="a5u-D9-MEX" secondAttribute="trailing" constant="8" id="tBW-a1-TSq"/>
+                    <constraint firstAttribute="trailing" secondItem="Xvf-gy-hUc" secondAttribute="trailing" constant="8" id="trN-uK-lqT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellImage" destination="a5u-D9-MEX" id="48A-Qz-msL"/>
+                <outlet property="cellTitle" destination="Xvf-gy-hUc" id="0Nj-3S-6LG"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="106.80803571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="circle-mark-selected" width="20" height="20"/>
+        <namedColor name="MainFontColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="viewBackGround">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

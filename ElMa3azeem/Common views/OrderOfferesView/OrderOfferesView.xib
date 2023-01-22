@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderOfferesView" customModule="HOME_COOKING" customModuleProvider="target">
+            <connections>
+                <outlet property="offresTableView" destination="j0B-To-8m7" id="PP8-dc-hLB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="248"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ax9-YD-Uv3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="248"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ml-5V-C6X">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offres :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JS-Oz-THE">
+                                    <rect key="frame" x="8" y="8" width="359" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="e7b-96-jf7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" name="MainFontColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Offres :"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="viewBackGround"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="6JS-Oz-THE" secondAttribute="bottom" constant="8" id="A1N-zf-t1f"/>
+                                <constraint firstItem="6JS-Oz-THE" firstAttribute="leading" secondItem="4ml-5V-C6X" secondAttribute="leading" constant="8" id="Kn0-3C-iXV"/>
+                                <constraint firstItem="6JS-Oz-THE" firstAttribute="top" secondItem="4ml-5V-C6X" secondAttribute="top" constant="8" id="gQa-9L-ck0"/>
+                                <constraint firstAttribute="trailing" secondItem="6JS-Oz-THE" secondAttribute="trailing" constant="8" id="jjO-o4-ohi"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="0.29999999999999999"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="2" height="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" white="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Re9-PZ-Z7h">
+                            <rect key="frame" x="0.0" y="54" width="375" height="194"/>
+                            <subviews>
+                                <tableView contentMode="scaleToFill" placeholderIntrinsicWidth="288" placeholderIntrinsicHeight="100" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="j0B-To-8m7" customClass="IntrinsicTableView" customModule="HOME_COOKING" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" name="viewBackGround"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="j0B-To-8m7" secondAttribute="trailing" id="KiI-zB-WSq"/>
+                                <constraint firstAttribute="bottom" secondItem="j0B-To-8m7" secondAttribute="bottom" id="PF5-dF-tOI"/>
+                                <constraint firstItem="j0B-To-8m7" firstAttribute="leading" secondItem="Re9-PZ-Z7h" secondAttribute="leading" id="aCz-wW-Hpi"/>
+                                <constraint firstItem="j0B-To-8m7" firstAttribute="top" secondItem="Re9-PZ-Z7h" secondAttribute="top" id="bpr-aP-hh4"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ax9-YD-Uv3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="iDp-xD-4hP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ax9-YD-Uv3" secondAttribute="trailing" id="w0E-EC-TU3"/>
+                <constraint firstItem="Ax9-YD-Uv3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="yvp-jW-Ql0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ax9-YD-Uv3" secondAttribute="bottom" id="ziQ-rm-9TT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34.5" y="-156"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="MainFontColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="viewBackGround">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

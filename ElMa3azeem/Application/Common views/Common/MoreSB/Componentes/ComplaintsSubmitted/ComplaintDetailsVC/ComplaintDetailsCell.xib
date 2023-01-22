@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ComplaintDetailsCell" customModule="Marsol_Awamer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="126" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AFy-Yq-a4e">
+                        <rect key="frame" x="0.0" y="0.0" width="126" height="118"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PE9-iJ-S8n">
+                        <rect key="frame" x="8" y="8" width="26" height="26"/>
+                        <color key="backgroundColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="GDt-tR-3dW"/>
+                            <constraint firstAttribute="width" constant="26" id="LQJ-uS-zKU"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title=""/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="deleteAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ZhQ-dP-35b"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AFy-Yq-a4e" secondAttribute="trailing" id="98w-h7-PzG"/>
+                <constraint firstItem="AFy-Yq-a4e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9zl-if-bvc"/>
+                <constraint firstItem="PE9-iJ-S8n" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Uzw-cL-xqR"/>
+                <constraint firstItem="PE9-iJ-S8n" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="e7j-sC-Epj"/>
+                <constraint firstItem="AFy-Yq-a4e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fja-v0-h3m"/>
+                <constraint firstAttribute="bottom" secondItem="AFy-Yq-a4e" secondAttribute="bottom" id="fyh-aH-LAf"/>
+            </constraints>
+            <size key="customSize" width="126" height="118"/>
+            <connections>
+                <outlet property="cellComplaintImage" destination="AFy-Yq-a4e" id="1v4-J2-WFY"/>
+                <outlet property="deleteBtn" destination="PE9-iJ-S8n" id="JHb-HK-sEM"/>
+            </connections>
+            <point key="canvasLocation" x="192.75362318840581" y="132.58928571428572"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

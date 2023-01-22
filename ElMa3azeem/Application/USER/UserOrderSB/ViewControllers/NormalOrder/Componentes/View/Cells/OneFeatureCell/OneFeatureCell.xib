@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OneFeatureCell" customModule="HOME_COOKING" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="173" height="73"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="3gd-RR-buX">
+                        <rect key="frame" x="0.0" y="0.0" width="173" height="73"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V19-iM-eM8">
+                                <rect key="frame" x="36" y="36.5" width="129" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" name="MainFontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle_check_Mark_not_selected" translatesAutoresizingMaskIntoConstraints="NO" id="wsg-bX-aTt">
+                                <rect key="frame" x="8" y="26.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="BSN-NN-hGL"/>
+                                    <constraint firstAttribute="width" secondItem="wsg-bX-aTt" secondAttribute="height" multiplier="1:1" id="KRv-jo-SjD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="BackGroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wsg-bX-aTt" firstAttribute="centerY" secondItem="3gd-RR-buX" secondAttribute="centerY" id="6Ar-ug-dJF"/>
+                            <constraint firstItem="V19-iM-eM8" firstAttribute="centerY" secondItem="wsg-bX-aTt" secondAttribute="centerY" id="CdE-UK-ejg"/>
+                            <constraint firstItem="V19-iM-eM8" firstAttribute="leading" secondItem="wsg-bX-aTt" secondAttribute="trailing" constant="8" id="I9Q-mI-4Ja"/>
+                            <constraint firstAttribute="trailing" secondItem="V19-iM-eM8" secondAttribute="trailing" constant="8" id="Nvt-OR-Tc5"/>
+                            <constraint firstItem="wsg-bX-aTt" firstAttribute="leading" secondItem="3gd-RR-buX" secondAttribute="leading" constant="8" id="xc8-cJ-lUv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3gd-RR-buX" secondAttribute="trailing" id="QJy-wS-kYS"/>
+                <constraint firstItem="3gd-RR-buX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vu7-Vd-PFa"/>
+                <constraint firstAttribute="bottom" secondItem="3gd-RR-buX" secondAttribute="bottom" id="rBm-uJ-S5Q"/>
+                <constraint firstItem="3gd-RR-buX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="slR-ja-9lH"/>
+            </constraints>
+            <size key="customSize" width="173" height="73"/>
+            <connections>
+                <outlet property="ckeckBox" destination="wsg-bX-aTt" id="f22-JL-BcY"/>
+                <outlet property="featureLbl" destination="V19-iM-eM8" id="vIs-vt-xCS"/>
+            </connections>
+            <point key="canvasLocation" x="226.81159420289856" y="113.50446428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="circle_check_Mark_not_selected" width="15" height="15"/>
+        <namedColor name="BackGroundColor">
+            <color red="0.125" green="0.125" blue="0.125" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="MainFontColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

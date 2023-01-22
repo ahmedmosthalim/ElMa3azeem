@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductAddSeletedSingleFeatureCell" customModule="ElMa3azeem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="208" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="208" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0S-lB-bnR">
+                        <rect key="frame" x="8" y="4" width="192" height="42"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZz-HI-FKJ">
+                                <rect key="frame" x="164" y="11" width="20" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KVg-xn-GNi">
+                                        <rect key="frame" x="0.0" y="3.5" width="20" height="12.5"/>
+                                        <color key="backgroundColor" name="StoreStateClose"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <imageReference key="image" image="xmark" catalog="system" symbolScale="small"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="light"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="StoreStateClose"/>
+                                <constraints>
+                                    <constraint firstItem="KVg-xn-GNi" firstAttribute="leading" secondItem="PZz-HI-FKJ" secondAttribute="leading" id="3dL-a6-Byq"/>
+                                    <constraint firstAttribute="height" constant="20" id="KGS-8P-mH8"/>
+                                    <constraint firstAttribute="width" constant="20" id="YUP-MH-VGA"/>
+                                    <constraint firstAttribute="bottom" secondItem="KVg-xn-GNi" secondAttribute="bottom" id="mdw-2z-Fw5"/>
+                                    <constraint firstItem="KVg-xn-GNi" firstAttribute="top" secondItem="PZz-HI-FKJ" secondAttribute="top" id="wS9-dy-s1M"/>
+                                    <constraint firstAttribute="trailing" secondItem="KVg-xn-GNi" secondAttribute="trailing" id="yTf-ei-Jti"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkT-vm-Hmb">
+                                <rect key="frame" x="8" y="4" width="31.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" name="MainFontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="BackGroundCell"/>
+                        <constraints>
+                            <constraint firstItem="GkT-vm-Hmb" firstAttribute="leading" secondItem="b0S-lB-bnR" secondAttribute="leading" constant="8" id="Dk9-Dn-6nk"/>
+                            <constraint firstItem="GkT-vm-Hmb" firstAttribute="top" secondItem="b0S-lB-bnR" secondAttribute="top" constant="4" id="Gul-j0-5HV"/>
+                            <constraint firstAttribute="trailing" secondItem="PZz-HI-FKJ" secondAttribute="trailing" constant="8" id="MvZ-dh-ABQ"/>
+                            <constraint firstItem="PZz-HI-FKJ" firstAttribute="centerY" secondItem="b0S-lB-bnR" secondAttribute="centerY" id="ajf-2J-CIh"/>
+                            <constraint firstAttribute="bottom" secondItem="GkT-vm-Hmb" secondAttribute="bottom" constant="4" id="ecc-qJ-9yq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="b0S-lB-bnR" secondAttribute="bottom" constant="4" id="56J-Mq-9da"/>
+                <constraint firstItem="b0S-lB-bnR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="E7t-zG-lPR"/>
+                <constraint firstItem="b0S-lB-bnR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="bXs-5A-g9p"/>
+                <constraint firstAttribute="trailing" secondItem="b0S-lB-bnR" secondAttribute="trailing" constant="8" id="yGW-30-pw4"/>
+            </constraints>
+            <size key="customSize" width="208" height="50"/>
+            <connections>
+                <outlet property="featureLbl" destination="GkT-vm-Hmb" id="NAp-zY-PYR"/>
+            </connections>
+            <point key="canvasLocation" x="252.17391304347828" y="90.401785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="BackGroundCell">
+            <color red="0.7369999885559082" green="0.7369999885559082" blue="0.7369999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainFontColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="StoreStateClose">
+            <color red="0.92500001192092896" green="0.18400000035762787" blue="0.18400000035762787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

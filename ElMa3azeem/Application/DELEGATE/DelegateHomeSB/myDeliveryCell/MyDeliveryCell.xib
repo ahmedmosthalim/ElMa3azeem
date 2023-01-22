@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="158" id="fwj-0Y-hjx" customClass="MyDeliveryCell" customModule="HOME_COOKING" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fwj-0Y-hjx" id="leb-Zk-ZmW">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmC-QL-aeB">
+                        <rect key="frame" x="16" y="8" width="382" height="142"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ndj-ab-bb6">
+                                <rect key="frame" x="10" y="16" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Os8-qF-byw"/>
+                                    <constraint firstAttribute="width" constant="80" id="qns-Wf-vf2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Grc-NY-NA8">
+                                <rect key="frame" x="100" y="20" width="168" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAb-cb-k4H">
+                                        <rect key="frame" x="0.0" y="0.0" width="99" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <color key="textColor" name="MainFontColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Order number:"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#123456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhJ-tm-3bt">
+                                        <rect key="frame" x="107" y="0.0" width="61" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <color key="textColor" name="MainFontColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Mf-PX-hzK">
+                                <rect key="frame" x="100" y="47" width="107.5" height="16"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="family name :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chi-aj-w9B">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="16"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                        <color key="textColor" name="MainFontColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mac" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="and-GN-hAZ">
+                                        <rect key="frame" x="83" y="0.0" width="24.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <color key="textColor" name="MainFontColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="WmV-6w-cnG"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bij-Th-MeS">
+                                <rect key="frame" x="100" y="73" width="262" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="1mV-gF-qkb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="منذ 1 ساعة" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZM-4F-ihU">
+                                <rect key="frame" x="321" y="16" width="45" height="12"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                <color key="textColor" name="MainFontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TIZ-or-oRZ">
+                                <rect key="frame" x="100" y="74" width="266" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Me" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mY-FM-plW">
+                                        <rect key="frame" x="0.0" y="11" width="18" height="14.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <color key="textColor" name="SecondFontColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Me"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Kce-6v-If0">
+                                        <rect key="frame" x="26" y="17.5" width="56" height="1"/>
+                                        <color key="backgroundColor" name="SecondaryMainColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="fdR-qZ-fJU"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Receiving" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynU-EI-hrJ">
+                                        <rect key="frame" x="90" y="11" width="56.5" height="14.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <color key="textColor" name="SecondFontColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Receiving"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Du2-6H-rpG">
+                                        <rect key="frame" x="154.5" y="17.5" width="56" height="1"/>
+                                        <color key="backgroundColor" name="SecondaryMainColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="b7w-Jk-pqK"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Delivery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWb-cb-GWE">
+                                        <rect key="frame" x="218.5" y="11" width="47.5" height="14.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <color key="textColor" name="SecondFontColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Delivery"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Du2-6H-rpG" firstAttribute="width" secondItem="Kce-6v-If0" secondAttribute="width" id="SFD-ks-689"/>
+                                    <constraint firstAttribute="height" constant="36" id="igf-qV-7aD"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be1-v9-9XX">
+                                <rect key="frame" x="145" y="113" width="18" height="14.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" name="MainFontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5R-rR-b2O">
+                                <rect key="frame" x="273.5" y="114" width="18" height="12"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" name="MainFontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="viewBackGround"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bij-Th-MeS" secondAttribute="trailing" constant="20" id="19y-ed-Iet"/>
+                            <constraint firstItem="CZM-4F-ihU" firstAttribute="top" secondItem="Ndj-ab-bb6" secondAttribute="top" id="1lm-nI-XRF"/>
+                            <constraint firstItem="Bij-Th-MeS" firstAttribute="bottom" secondItem="Ndj-ab-bb6" secondAttribute="bottom" priority="250" id="33N-fy-oOr"/>
+                            <constraint firstAttribute="trailing" secondItem="CZM-4F-ihU" secondAttribute="trailing" constant="16" id="3aW-BC-39r"/>
+                            <constraint firstItem="Be1-v9-9XX" firstAttribute="centerY" secondItem="m5R-rR-b2O" secondAttribute="centerY" id="3pf-1L-QWG"/>
+                            <constraint firstItem="Grc-NY-NA8" firstAttribute="top" secondItem="zmC-QL-aeB" secondAttribute="top" constant="20" symbolic="YES" id="4uU-qC-Yk5"/>
+                            <constraint firstAttribute="bottom" secondItem="m5R-rR-b2O" secondAttribute="bottom" constant="16" id="7M9-lS-vVy"/>
+                            <constraint firstItem="Ndj-ab-bb6" firstAttribute="leading" secondItem="zmC-QL-aeB" secondAttribute="leading" constant="10" id="DEY-R3-SMM"/>
+                            <constraint firstItem="Grc-NY-NA8" firstAttribute="leading" secondItem="Ndj-ab-bb6" secondAttribute="trailing" constant="10" id="FAb-a7-08u"/>
+                            <constraint firstItem="7Mf-PX-hzK" firstAttribute="top" secondItem="Grc-NY-NA8" secondAttribute="bottom" constant="10" id="Tj8-vV-hKm"/>
+                            <constraint firstItem="Be1-v9-9XX" firstAttribute="centerX" secondItem="Kce-6v-If0" secondAttribute="centerX" id="Wed-2j-8hb"/>
+                            <constraint firstItem="m5R-rR-b2O" firstAttribute="centerX" secondItem="Du2-6H-rpG" secondAttribute="centerX" id="Z1K-GA-WHV"/>
+                            <constraint firstItem="TIZ-or-oRZ" firstAttribute="top" secondItem="Bij-Th-MeS" secondAttribute="bottom" id="byo-F8-Acp"/>
+                            <constraint firstItem="TIZ-or-oRZ" firstAttribute="leading" secondItem="Ndj-ab-bb6" secondAttribute="trailing" constant="10" id="gwr-uI-kNY"/>
+                            <constraint firstItem="Bij-Th-MeS" firstAttribute="leading" secondItem="Ndj-ab-bb6" secondAttribute="trailing" constant="10" id="k4r-YB-42k"/>
+                            <constraint firstItem="CZM-4F-ihU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Grc-NY-NA8" secondAttribute="trailing" constant="8" id="sMv-JO-ghA"/>
+                            <constraint firstItem="m5R-rR-b2O" firstAttribute="top" secondItem="TIZ-or-oRZ" secondAttribute="bottom" constant="4" id="sQl-i9-zYh"/>
+                            <constraint firstItem="Ndj-ab-bb6" firstAttribute="top" secondItem="zmC-QL-aeB" secondAttribute="top" constant="16" id="tDx-l1-3jq"/>
+                            <constraint firstItem="7Mf-PX-hzK" firstAttribute="leading" secondItem="Ndj-ab-bb6" secondAttribute="trailing" constant="10" id="uQw-c3-aOf"/>
+                            <constraint firstAttribute="trailing" secondItem="TIZ-or-oRZ" secondAttribute="trailing" constant="16" id="yzm-1M-KzO"/>
+                            <constraint firstItem="Bij-Th-MeS" firstAttribute="top" secondItem="7Mf-PX-hzK" secondAttribute="bottom" constant="10" id="z7M-0L-VJf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="zmC-QL-aeB" secondAttribute="bottom" constant="8" id="iKH-to-k9F"/>
+                    <constraint firstItem="zmC-QL-aeB" firstAttribute="top" secondItem="leb-Zk-ZmW" secondAttribute="top" constant="8" id="jvi-lL-lRA"/>
+                    <constraint firstAttribute="trailing" secondItem="zmC-QL-aeB" secondAttribute="trailing" constant="16" id="zTa-bn-3JD"/>
+                    <constraint firstItem="zmC-QL-aeB" firstAttribute="leading" secondItem="leb-Zk-ZmW" secondAttribute="leading" constant="16" id="zyz-cq-5Xs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="hHh-8y-LJg"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="deliveryDistance" destination="m5R-rR-b2O" id="fJL-oN-BmC"/>
+                <outlet property="locationStackView" destination="TIZ-or-oRZ" id="8tm-rS-m6I"/>
+                <outlet property="orderImage" destination="Ndj-ab-bb6" id="tqT-o3-qTv"/>
+                <outlet property="orderName" destination="and-GN-hAZ" id="fXN-BO-wmY"/>
+                <outlet property="orderNumber" destination="ZhJ-tm-3bt" id="vd1-4y-Cqf"/>
+                <outlet property="orderStoreNameTitle" destination="chi-aj-w9B" id="IsA-qz-9uG"/>
+                <outlet property="orderTime" destination="CZM-4F-ihU" id="KBX-sS-Liq"/>
+                <outlet property="reciveDistance" destination="Be1-v9-9XX" id="qU9-0d-QbG"/>
+                <outlet property="recivingLbl" destination="ynU-EI-hrJ" id="Qm6-pr-2QA"/>
+            </connections>
+            <point key="canvasLocation" x="201.44927536231884" y="115.84821428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="logo" width="142.5" height="155.5"/>
+        <namedColor name="MainFontColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="SecondFontColor">
+            <color red="0.7369999885559082" green="0.7369999885559082" blue="0.7369999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryMainColor">
+            <color red="0.87800002098083496" green="0.60399997234344482" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="viewBackGround">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

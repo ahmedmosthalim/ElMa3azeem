@@ -1,0 +1,79 @@
+/* 
+  Localizable.strings
+  ElMa3azeem
+
+  Created by Abdullah Tarek & Ahmed Mostafa Halim on 26/11/2022.
+  
+*/
+
+//Auth
+
+"app language" = "app language";
+"welcome" = "welcome";
+"please choose app language" = "please choose app language";
+"confirm" = "confirm";
+"next" = "next";
+"start your experience now" = "start your experience now";
+"skip" = "skip";
+"Login" = "Login";
+"please enter phone to receive confirmation code" = "please enter phone to receive confirmation code";
+"phone number" = "phone number";
+"skip login" = "skip login";
+"use this application signifies your agreement to" = "use this application signifies your agreement to";
+"Terms and Conditions" = "Terms and Conditions";
+
+"You can resend the code in" = "You can resend the code in";
+"second" = "second";
+"Resend the code again" = "Resend the code again";
+"Validation code" = "Validation code";
+"Please enter the code sent to you via the mobile number" = "Please enter the code sent to you via the mobile number";
+// "confirm" = "Save changes";
+"Complete profile" = "Complete profile";
+"Complete your profile" = "Complete your profile";
+"Please provide the following information to complete your profile" = "Please provide the following information to complete your profile";
+"user name" = "user name";
+"Please enter username" = "Please enter username";
+"e-mail" = "e-mail";
+"Please enter your email" = "Please enter your email";
+"Home" = "Home";
+"My Orders" = "My Orders";
+"My delivery" = "My delivery";
+"More" = "More";
+"Account information" = "Account information";
+"General Settings" = "General Settings";
+"General information" = "General information";
+"Profile personly" = "Profile personly";
+"Complaints submitted" = "Complaints submitted";
+"Wallet" = "Wallet";
+"User comments" = "User comments";
+"Notification tone" = "Notification tone";
+"Notification settings" = "Notification settings";
+"Language settings" = "Language settings";
+"About us" = "About us";
+"Connect with us" = "Connect with us";
+"Privacy policy" = "Privacy policy";
+"Terms and Conditions" = "Terms and Conditions";
+"Rate the app" = "Rate the app";
+"How do I work in messenger orders?" = "How do I work in messenger orders?";
+"Contact us on Telegram" = "Contact us on Telegram";
+"Logout" = "Logout";
+"close" = "close";
+"Save Changes" = "Save Changes";
+"Choose photo" = "Choose photo";
+"Camera" = "Camera";
+"Photos" = "Photos";
+"Cancel" = "Cancel";
+"Male" = "Male";
+"Female" = "Female";
+//Order Statuse Loclize
+"pending" = "pending";
+"inprogress" = "inprogress";
+"prepared" = "prepared";
+"intransit" = "intransit";
+"reached_store" = "reached store";
+"invoice_created" = "invoice created";
+"reached_receive_location" = "receive location";
+"reached_deliver_location" = "deliver location";
+"finished" = "finished";
+"multiple" = "multi-feature";
+"work time" = "work time";

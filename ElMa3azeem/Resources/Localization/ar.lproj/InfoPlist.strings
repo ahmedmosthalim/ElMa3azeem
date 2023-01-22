@@ -1,0 +1,21 @@
+/* 
+  InfoPlist.strings
+  Veterinary
+
+  Created by Mohammed Abouarab on 1111/2022.
+  
+*/
+
+//"CFBundleDisplayName" = "هوم كوكينج";
+
+"NSCameraUsageDescription" = "هوم كوكينج يحتاج الي اذنك لفتح الكاميرا لتحميل صوره طلبك";
+
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "هوم كوكينج يريد الوصول إلى موقعك للحصول على أداء أفضل والسماح لك بالوصول إلى أقرب المتاجر";
+
+"NSLocationAlwaysUsageDescription" = "هوم كوكينج يريد الوصول إلى موقعك للحصول على أداء أفضل والسماح لك بالوصول إلى أقرب المتاجر";
+
+"NSLocationWhenInUseUsageDescription" = "هوم كوكينج يحتاج إلى اذنك للوصول إلى موقعك للحصول على أقرب مزودين خدمة لك وتسليم طلبك إلى موقعك";
+
+"NSPhotoLibraryUsageDescription" = "هوم كوكينج يحتاج إلى إذنك لفتح معرض الصور الخاص بك ليتمكن من تحميل صور طلبك";
+
+"NSMicrophoneUsageDescription" = "هوم كوكينج يريد إذنك للوصول إلى الميكروفون للسماح لك بإرسال رسائل صوتية";
