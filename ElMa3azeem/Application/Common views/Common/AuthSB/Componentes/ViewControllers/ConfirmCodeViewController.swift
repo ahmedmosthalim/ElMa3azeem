@@ -93,7 +93,7 @@ final class ConfirmCodeViewController: BaseViewController, OTPFieldViewDelegate 
     @IBAction func confirmCodeAction(_ sender: UIButton) {
         if code == nil
         {
-            showError(error: "Please enter verfication code".localized)
+            showError(error: "Please enter verification code".localized)
             
         }else
         {

@@ -83,7 +83,7 @@
 "Work time" = "مواعيد العمل";
 "Store branches" = "فروع المتجر";
 "Change" = "تغير";
-"Find a specific family ?..." = "ابحث عن اسرة معينة ؟...";
+"Find a specific family ?..." = "ابحث عن مقدم خدمة...";
 "Find what you want ..." = "اعثر على ما تريد ...";
 "continue" = "إستمرار";
 "Sorry, the store is currently unavailable" = "نأسف جدا , المتجر غير متاح حاليا";
@@ -190,7 +190,7 @@
 "current orders" = "الطلبات الحالية";
 "finished orders" = "الطلبات المنتهية";
 "order num : " = "رقم  الطلب : ";
-"family name :" = "اسم الاسرة :";
+"family name :" = "اسم مقدم الخدمة :";
 "There are no order yet ." = "لا توجد طلبات حتى الان";
 "There are no orders yet, go and place your order now" = "لا يوجد طلبات الان و انشاء طلبك الان";
 "There are no Offers yet, You can Check Offers Later" = "لا يوجد عروض الان و يمكنك تفقد العروض لاحقا";
@@ -659,7 +659,7 @@
 "You Can Control Notifications" = "يمكنك التحكم في الاشعارات";
 "Sorry We don't have delivery service right now" = "نأسف ليس لدينا خدمة توصيل في الوقت الحالي";
 "This Feature is not available right now" = "هذه الخاصية غير متوفرة حاليا";
-"Please enter verfication code" = "الرجاء ادخال كود التأكيد";
+"Please enter verification code" = "الرجاء ادخال كود التأكيد";
 "Order Number" = "رقم الطلب";
 "Order Date" = "تاريخ الطلب";
 "Payment Way" = "طريقة الدفع";
