@@ -12,7 +12,7 @@ import Foundation
 enum ProviderMoreRouter: URLRequestBuilder {
     case getCategories
     case getProviderProfile
-    case updateStoreProfile(nameAr: String, nameEn: String, category: String, location: CLLocationCoordinate2D, address: String, baankAccountNumber: String, ibanNumber: String, bankName: String, commirtialID: String, days: String)
+    case updateStoreProfile(nameAr: String, nameEn: String, category: String, location: CLLocationCoordinate2D, address: String, baankAccountNumber: String, ibanNumber: String, bankName: String, commirtialID: String, days: String,isDelivery:Bool)
 
     // branckes
     case getBranches(page: Int)
@@ -80,7 +80,7 @@ enum ProviderMoreRouter: URLRequestBuilder {
         var params = Parameters()
 
         switch self {
-        case let .updateStoreProfile(nameAr: nameAr, nameEn: nameEn, category: category, location: location, address: address, baankAccountNumber: baankAccountNumber, ibanNumber: ibanNumber, bankName: bankName, commirtialID: commirtialID, days: days):
+        case let .updateStoreProfile(nameAr: nameAr, nameEn: nameEn, category: category, location: location, address: address, baankAccountNumber: baankAccountNumber, ibanNumber: ibanNumber, bankName: bankName, commirtialID: commirtialID, days: days,isDelivery:isDelivery):
             params = [
                 "name_ar": nameAr,
                 "name_en": nameEn,
@@ -93,6 +93,7 @@ enum ProviderMoreRouter: URLRequestBuilder {
                 "iban_number": ibanNumber,
                 "bank_number": baankAccountNumber,
                 "days": days,
+                "is_delivery" : isDelivery,
             ]
 
         case let .getBranches(page: page):

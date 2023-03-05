@@ -42,6 +42,7 @@ struct StoreDetailsData: Codable {
     var isSubscribe         : Bool = false
     var hasDelivery         : Bool?
     var categoryID          : Int?
+    var isDelivery          : Bool?
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -73,6 +74,7 @@ struct StoreDetailsData: Codable {
         case viewPackages = "view_in_ui_only"
         case hasDelivery = "have_delivery"
         case categoryID = "category_id"
+        case isDelivery = "is_delivery"
     }
 }
 

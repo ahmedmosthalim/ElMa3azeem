@@ -13,39 +13,51 @@ class StoreSettingVC: BaseViewController {
     // MARK: - OutLets
 
     // main
-    @IBOutlet weak var storeSettingBtn: RoundedButton!
-    @IBOutlet weak var workTimeBtn: RoundedButton!
-    @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var infoStackView: UIStackView!
-    @IBOutlet weak var timeTitleStackView: UIView!
+    @IBOutlet weak var storeSettingBtn      : RoundedButton!
+    @IBOutlet weak var workTimeBtn          : RoundedButton!
+    @IBOutlet weak var containerView        : UIView!
+    @IBOutlet weak var tableView            : UITableView!
+    @IBOutlet weak var infoStackView        : UIStackView!
+    @IBOutlet weak var timeTitleStackView   : UIView!
 
     // data
-    @IBOutlet weak var storeImage: UIImageView!
-    @IBOutlet weak var storeCover: UIImageView!
-    @IBOutlet weak var storeCoverView: AppTextFieldViewStyle!
-    @IBOutlet weak var storeCoverImageTf: AppTextFieldStyle!
-    @IBOutlet weak var storeNameInArabicTf: AppTextFieldStyle!
-    @IBOutlet weak var storeNameInEnglishTf: AppTextFieldStyle!
-    @IBOutlet weak var categoryTf: AppPickerTextFieldStyle!
-    @IBOutlet weak var locationView: AppTextFieldViewStyle!
-    @IBOutlet weak var locationTf: AppTextFieldStyle!
-    @IBOutlet weak var bankAccountNumberTf: AppTextFieldStyle!
-    @IBOutlet weak var ibanTf: AppTextFieldStyle!
-    @IBOutlet weak var bankNameTf: AppTextFieldStyle!
-    @IBOutlet weak var commercialIDTf: AppTextFieldStyle!
-    @IBOutlet weak var commercialPhotoView: AppTextFieldViewStyle!
-    @IBOutlet weak var commercialImageView: UIImageView!
-
+    @IBOutlet weak var storeImage           : UIImageView!
+    @IBOutlet weak var storeCover           : UIImageView!
+    @IBOutlet weak var storeCoverView       : AppTextFieldViewStyle!
+    @IBOutlet weak var storeCoverImageTf    : AppTextFieldStyle!
+    @IBOutlet weak var storeNameInArabicTf  : AppTextFieldStyle!
+    @IBOutlet weak var storeNameInEnglishTf : AppTextFieldStyle!
+    @IBOutlet weak var categoryTf           : AppPickerTextFieldStyle!
+    @IBOutlet weak var locationView         : AppTextFieldViewStyle!
+    @IBOutlet weak var locationTf           : AppTextFieldStyle!
+    @IBOutlet weak var bankAccountNumberTf  : AppTextFieldStyle!
+    @IBOutlet weak var ibanTf               : AppTextFieldStyle!
+    @IBOutlet weak var bankNameTf           : AppTextFieldStyle!
+    @IBOutlet weak var commercialIDTf       : AppTextFieldStyle!
+    @IBOutlet weak var commercialPhotoView  : AppTextFieldViewStyle!
+    @IBOutlet weak var commercialImageView  : UIImageView!
+    
+    
+    
+    // Have Delivery Stack
+    @IBOutlet weak var yesStackView         : UIStackView!
+    @IBOutlet weak var noStackView          : UIStackView!
+    
+    @IBOutlet weak var yesLabel             : UILabel!
+    @IBOutlet weak var noLabel              : UILabel!
+    
+    @IBOutlet weak var noImageView          : UIImageView!
+    @IBOutlet weak var yesImageView         : UIImageView!
     // MARK: - Variables
 
     private var categories = [Category]()
     var providerData: StoreDetailsData?
+    private var haveDelivery : Bool = true
 
-    private var location: CLLocationCoordinate2D?
-    private var imageType: ImageType = .notAny
-    private var coverImageData: Data?
-    private var storeImageData: Data?
+    private var location        : CLLocationCoordinate2D?
+    private var imageType       : ImageType = .notAny
+    private var coverImageData  : Data?
+    private var storeImageData  : Data?
     private var commercialImageData: Data?
 
     enum ImageType {
@@ -89,6 +101,14 @@ class StoreSettingVC: BaseViewController {
             guard let self = self else { return }
             self.commercialTapped()
         }
+        yesStackView.addTapGesture { [weak self] in
+            guard let self = self else { return }
+            self.yesTapped()
+        }
+        noStackView.addTapGesture { [weak self] in
+            guard let self = self else { return }
+            self.noTapped()
+        }
     }
 
     @objc func coverTapped() {
@@ -100,6 +120,24 @@ class StoreSettingVC: BaseViewController {
         imageType = .image
         uploadImage(mediaType: [mediaTypes.publicImage.rawValue])
     }
+    @objc private func yesTapped() {
+        haveDelivery = true
+        yesImageView.image = UIImage(named: "circle-mark-selected")
+        noImageView.image = UIImage(named: "circle-mark-not-selected")
+        
+        yesLabel.textColor  = .appColor(.MainFontColor)
+        noLabel.textColor  = .appColor(.SecondFontColor)
+        
+    }
+    @objc private func noTapped() {
+        haveDelivery = false
+        noImageView.image = UIImage(named: "circle-mark-selected")
+        yesImageView.image = UIImage(named: "circle-mark-not-selected")
+        
+        noLabel.textColor       = .appColor(.MainFontColor)
+        yesLabel.textColor      = .appColor(.SecondFontColor)
+    }
+                
 
     @objc func commercialTapped() {
         imageType = .commercial
@@ -152,6 +190,12 @@ class StoreSettingVC: BaseViewController {
         location = CLLocationCoordinate2D(latitude: Double(providerData?.lat ?? "") ?? 0.0, longitude: Double(providerData?.long ?? "") ?? 0.0)
         tableView.reloadWithAnimation()
         infoStackView.reloadData(animationDirection: .down)
+        if providerData?.isDelivery == true{
+            yesTapped()
+        }else
+        {
+            noTapped()
+        }
     }
 
     // MARK: - NAVIGATIONS
@@ -213,7 +257,7 @@ class StoreSettingVC: BaseViewController {
 
             print(dayes)
             guard let loaction = location else { return }
-            updateStoreDetails(nameAr: storeNameInArabicTf.text ?? "", nameEn: storeNameInEnglishTf.text ?? "", category: categoryTf.selectedPickerData?.pickerKey ?? "", location: loaction, address: locationTf.text ?? "", bankAccountNumber: bankAccountNumberTf.text ?? "", ibanNumber: ibanTf.text ?? "", bankName: bankNameTf.text ?? "", commirtialID: commercialIDTf.text ?? "", days: dayes.toString(), icon: storeImageData, cover: coverImageData, commercialImage: commercialImageData)
+            updateStoreDetails(nameAr: storeNameInArabicTf.text ?? "", nameEn: storeNameInEnglishTf.text ?? "", category: categoryTf.selectedPickerData?.pickerKey ?? "", location: loaction, address: locationTf.text ?? "", bankAccountNumber: bankAccountNumberTf.text ?? "", ibanNumber: ibanTf.text ?? "", bankName: bankNameTf.text ?? "", commirtialID: commercialIDTf.text ?? "", days: dayes.toString(), icon: storeImageData, cover: coverImageData, commercialImage: commercialImageData,isDelivery: haveDelivery)
 
         } catch {
             showError(error: error.localizedDescription)
@@ -290,7 +334,7 @@ extension StoreSettingVC {
         }
     }
 
-    func updateStoreDetails(nameAr: String, nameEn: String, category: String, location: CLLocationCoordinate2D, address: String, bankAccountNumber: String, ibanNumber: String, bankName: String, commirtialID: String, days: String, icon: Data?, cover: Data?, commercialImage: Data?) {
+    func updateStoreDetails(nameAr: String, nameEn: String, category: String, location: CLLocationCoordinate2D, address: String, bankAccountNumber: String, ibanNumber: String, bankName: String, commirtialID: String, days: String, icon: Data?, cover: Data?, commercialImage: Data?,isDelivery:Bool) {
         showLoader()
 
         var uploadedData = [UploadData]()
@@ -319,14 +363,14 @@ extension StoreSettingVC {
             }
         }
 
-        ProviderMoreRouter.updateStoreProfile(nameAr: nameAr, nameEn: nameEn, category: category, location: location, address: address, baankAccountNumber: bankAccountNumber, ibanNumber: ibanNumber, bankName: bankName, commirtialID: commirtialID, days: days).send(GeneralModel<StoreDetailsData>.self, data: uploadedData.isEmpty ? nil : uploadedData) { [weak self] result in
+        ProviderMoreRouter.updateStoreProfile(nameAr: nameAr, nameEn: nameEn, category: category, location: location, address: address, baankAccountNumber: bankAccountNumber, ibanNumber: ibanNumber, bankName: bankName, commirtialID: commirtialID, days: days,isDelivery: isDelivery).send(GeneralModel<StoreDetailsData>.self, data: uploadedData.isEmpty ? nil : uploadedData) { [weak self] result in
             guard let self = self else { return }
             self.hideLoader()
             switch result {
             case let .failure(error):
                 if error.localizedDescription == APIConnectionErrors.connection.localizedDescription {
                     self.showNoInternetConnection { [weak self] in
-                        self?.updateStoreDetails(nameAr: nameAr, nameEn: nameEn, category: category, location: location, address: address, bankAccountNumber: bankAccountNumber, ibanNumber: ibanNumber, bankName: bankName, commirtialID: commirtialID, days: days, icon: icon, cover: cover, commercialImage: commercialImage)
+                        self?.updateStoreDetails(nameAr: nameAr, nameEn: nameEn, category: category, location: location, address: address, bankAccountNumber: bankAccountNumber, ibanNumber: ibanNumber, bankName: bankName, commirtialID: commirtialID, days: days, icon: icon, cover: cover, commercialImage: commercialImage,isDelivery: isDelivery)
                     }
                 } else {
                     self.showError(error: error.localizedDescription)
